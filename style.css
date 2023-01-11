@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar */
+.nav-container {
+    background-color:#333333;
+}
+
+.nav {
+    color: white;
+    height: 80px;
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-title {
+    margin-left: 20px;
+    /* font-size: x-large; */
+}
+
+.nav-links {
+    width: 50%;
+    list-style: none;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.button {
+    color: white;
+    background-color: #45a2b8;
+    box-shadow: 5px 5px black;
+    border: none;
+    font-size: 16px;
+    width: 80px;
+}
+
+/* User Card */
+.row {
+    display: flex;
+}
+
+.col,
+.col-2 {
+    padding: 10px;
+    margin: 10px;
+    flex: 1;
+}
+
+.col-2 {
+    flex: 2;
+}
+
+.user-container {
+    margin: 0px auto;
+    width: 1000px;
+}
+
+.usercard, .req-container {
+    width: 100%;
+    background-color: #fff;
+    border: 2px solid #999;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    overflow: hidden;
+}
+
+.topcard {
+    background-color: #45a2b8;
+    height: 125px;
+    margin-bottom: 70px;
+}
+
+.bottomcard {
+    padding: 20px;
+}
+.bottomcard h1,
+.bottomcard h2,
+.bottomcard h3,
+.bottomcard p {
+    margin: 20px 0px;
+}
+
+.pic {
+    border-radius: 50%;
+    background-color: #fff;
+    height: 190px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.gearpic {
+    height: 20px;
+}
+
+.waypoint {
+    height: 20px;
+}
+
+a {
+    color: #3a81e6;
+}
+
+/* Connection Request */
+.default-pic {
+    border-radius: 50px;
+    height: 50px;
+    margin: 0px 5px 5px 5px;
+}
+
+.req-title {
+    background-color: #333333;
+    padding: 10px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.request {
+    display: flex;
+    justify-content: space-between;
+}
+
+.start,
+.end {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.footer {
+    padding: 20px;
+    border-top: 2px solid #999;
+}
+
+.connections {
+    background-color: #eee;
+    color: black;
+    border-radius: 50%;
+    height: 20px;
+    padding: 0px 10px;
+}
+
+/* Education */
+.dates {
+    font-size: 18px
+}

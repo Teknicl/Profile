@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="nav-container">
+        <div class="nav">
+            <h1 class="nav-title">Profile</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">My Profile</a></li>
+                <li><a href="#">Find Connections</a></li>
+                <li><button class="button" onclick="signOut(this)">Sign Out</button></li>
+            </ul>
+        </div>
+    </div>
+    <!-- User card -->
+    <div class="user-container">
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-2">
+                <div class="usercard">
+                    <div class="topcard">
+                        <img src="images/jane-m.jpg" alt="jane-m" class="pic">
+                    </div>
+                    <div class="bottomcard">
+                        <h1>Jane Doe</h1>
+                        <h3>
+                            <img src="images/map-marker.png" alt="map-marker" class="waypoint">
+                            Seattle
+                        </h3>
+                        <p>Developer | Engineer | Problem Solver<br>
+                        Master of shadows and the Internet!</p>
+                        <p>
+                            <a href="#" onclick="edit(this)">
+                                <img src="images/gear.png" alt="gear" class="gearpic">
+                                edit profile
+                            </a>
+                        </p>
+                    </div>    
+                </div>
+                <div class="req-container">
+                    <div class="req-title">
+                        Education
+                    </div>
+                    <div class="bottomcard">
+                        <h3>Coding Dojo - Full Stack Bootcamp</h3>
+                        <p class="dates">Dec 2019 - Mar 2020</p>
+                        <p>Triple black belt in Python, MERN, and C#...</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Column -->
+            <div class="col">
+                <div class="req-container">
+                    <div class="req-title">
+                        <span class="connections">2</span>
+                        Connection Requests
+                    </div>
+                    <div class="request" id="req1">
+                        <span class="start">
+                            <img src="images/todd-s.jpg" alt="todd-s" class="default-pic">
+                            <span>Todd E.</span>    
+                        </span>
+                        <span class="end">
+                            <img src="images/accept-circle.png" alt="accept" class="default-pic" onclick="accept(this)">
+                        <img src="images/close-circle.png" alt="close-circle" class="default-pic" onclick="decline(this)">
+                        </span>
+                    </div>
+                    <div class="request" id="req2">
+                        <span class="start">
+                            <img src="images/phil-s.jpg" alt="phil-s" class="default-pic">
+                            <span>Phil K.</span>    
+                        </span>
+                        <span class="end">
+                            <img src="images/accept-circle.png" alt="accept" class="default-pic" onclick="accept2(this)">
+                        <img src="images/close-circle.png" alt="close-circle" class="default-pic" onclick="decline2(this)">
+                        </span>
+                    </div>
+                </div> 
+                <div class="req-container">
+                    <div class="req-title">
+                        <span class="connections">500+</span>
+                        Your Connections
+                    </div>
+                    <div class="request">
+                        <span class="start">
+                            <img src="images/adrien-s.jpg" alt="adrien-s" class="default-pic">
+                            <span>Adrien S.</span>    
+                        </span>
+                    </div>
+                    <div class="request">
+                        <span class="start">
+                            <img src="images/anne-s.jpg" alt="anne-s" class="default-pic">
+                            <span>Anne S.</span>    
+                        </span>
+                    </div>
+                    <div class="request">
+                        <span class="start">
+                            <img src="images/alayne-s.jpg" alt="alayne-s" class="default-pic">
+                            <span>Alayne S.</span>    
+                        </span>
+                    </div>
+                    <div class="request">
+                        <span class="start">
+                            <img src="images/arry-s.jpg" alt="arry-s" class="default-pic">
+                            <span>Arry S.</span>    
+                        </span>
+                    </div>
+                    <div class="footer">
+                        <a href="#">View More</a>
+                    </div>
+                </div>   
+            </div> 
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
